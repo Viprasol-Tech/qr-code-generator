@@ -56,8 +56,8 @@ qr-code-generator encode-text "https://viprasol.com" --png qr.png
 ```python
 from qr_code_generator import encode, to_ascii, to_png
 
-matrix = encode("VIPRASOL")          # list[list[bool]] — True = dark module
-print(to_ascii(matrix))              # ASCII-art string with quiet zone
+matrix = encode("VIPRASOL")  # list[list[bool]] — True = dark module
+print(to_ascii(matrix))  # ASCII-art string with quiet zone
 png_bytes = to_png(matrix, scale=8)  # valid PNG bytes, stdlib only
 
 # Force a specific version (1-3) instead of auto-sizing:
